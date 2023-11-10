@@ -1,0 +1,20 @@
+
+.cart{
+    width: 36px;
+    cursor: pointer;    
+}
+
+.contador{
+    font-size: 700;
+    color: whitesmoke;
+}
+
+.cartVacio {    
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;    
+}
+
+.cartMensaje {
+    margin-bottom: 25px;
+}
