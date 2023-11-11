@@ -58,7 +58,7 @@ const misProductos = [
     descripcion:
       `Wanama es una marca argentina conocida por su línea de ropa, que abarca todas las edades, incluso bebés! Con diseños innovadores, un estilo relajado y bohemio que atrae principalmente a los jóvenes, Wanama logró instalarse entre el público que quiere verse moderno y elegante. Objetivo que lograron traducir en su nueva colección de anteojos de sol, con una gran diversidad de modelos y colores, para que todos puedan vestir su mirada de acuerdo a sus gustos personales.
       Su estilo Urban Folk y su orientación permanente hacia la innovación y al diseño, junto con la calidad de sus productos, hacen de Wanama la marca elegida por hombres y mujeres jóvenes y modernos.`,
-    idCat: "2",
+    idCat: "2", 
   },
 ];
 

@@ -1,0 +1,16 @@
+
+.cartItem {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.cartItem h4, p {
+    margin-bottom: 10px;
+}
+
+.cartItem button {
+    padding:  5px;
+    margin-bottom: 5px;
+}
+

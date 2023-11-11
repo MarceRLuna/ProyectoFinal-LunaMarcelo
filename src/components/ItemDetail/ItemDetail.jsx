@@ -20,8 +20,7 @@ export const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
 
   const handlerCantidad = (cantidad) => {
         setAgregarItem(cantidad);
-        //console.log("Productos agregados: " + cantidad);
-
+        
         //creamos un objeto con el item y la cantidad:
 
         const item = {id, nombre, precio};

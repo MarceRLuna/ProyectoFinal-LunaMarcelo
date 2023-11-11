@@ -1,20 +1,29 @@
 
-.cart{
-    width: 36px;
-    cursor: pointer;    
-}
-
-.contador{
-    font-size: 700;
-    color: whitesmoke;
-}
-
-.cartVacio {    
+.carrito{
     width: 70%;
     margin: 0 auto;
-    padding: 20px 0;    
+    padding: 20px 0;
+}
+
+.carrito h3, h4 {
+    margin-bottom: 10px;
+}
+
+.carrito button {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.cartVacio {
+    width: 70%;
+    padding: 20px 0;
+    margin: 0 auto;
 }
 
 .cartMensaje {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+.cartVacio button {
+    padding: 5px;
 }

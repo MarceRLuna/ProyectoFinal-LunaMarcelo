@@ -5,11 +5,10 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 400px;
+    height: 460px;
     border: 1px solid black;
-    border-radius: 20 px;
-    background-color: #4a6f7a;
     border-radius: 10px;
+    background-color: #4a6f7a;    
     margin: .5rem;          
 }
 
@@ -30,8 +29,7 @@
 
 .btn {
     font-family: 'Nunito', sans-serif;
-    font-weight: bolder;
-    margin-top: 8px;
+    font-weight: bolder;    
     text-decoration: none;
     padding: 4px 10px;
     font-size: 15px;
