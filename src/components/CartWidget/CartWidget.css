@@ -1,6 +1,13 @@
 
-
 .cart{
     width: 36px;
     cursor: pointer;    
 }
+
+.numero {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 20px;    
+}
+

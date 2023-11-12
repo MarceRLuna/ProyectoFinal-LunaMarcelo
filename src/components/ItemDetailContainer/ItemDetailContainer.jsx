@@ -14,11 +14,6 @@ export const ItemDetailContainer = () => {
     const [producto, setProducto] = useState(null);
     const {idItem} = useParams();
 
-    // useEffect (() =>{
-    //     getUnProducto(idItem)
-    //         .then(res => setProducto(res))
-    // }, [idItem])
-
     useEffect(()=>{
         const nuevoDoc = doc(db, "inventario", idItem);
 

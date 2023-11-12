@@ -115,7 +115,7 @@ export const Checkout = () => {
                     <input type="email" value={emailConfir} onChange={(e) => setEmailConfir(e.target.value)} />
                 </div>
 
-                <div>
+                <div className="mensajeError">
                     {
                         error && <p style={{color: "red"}}> {error} </p>
                     }

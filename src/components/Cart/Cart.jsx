@@ -21,7 +21,7 @@ export const Cart = () =>{
     }
     return(      
 
-        <>
+        <div className="cartProductos">
             {cart.map (producto => <CarttItem key={producto.id} {...producto}/>)}
             <div className="carrito">
                 <h3>Total: $ {total}</h3>
@@ -31,7 +31,7 @@ export const Cart = () =>{
                     <button>Finalizar Compra</button>
                 </Link>
             </div>
-        </>
+        </div>
 
     )
 }

@@ -24,31 +24,47 @@
     margin-left: 10px;
 }
 
+.mensajeError {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .btnFormulario{
-    color: #039be5;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 25px;
     font-size: 15px;
     position: relative;
-    margin: 32px;
+    margin-top: 10px;
+    background: #039be5;
+    color: #ffffff;
+    border-radius: 50px;
+    transition: transform 0.3s ease;    
 }
 
 .btnFormulario::after, .btnFormulario::before{
-    border: 3px solid #039be5;
     content: "";
     position: absolute;
-    width: calc(100% - 6px);
-    height: calc(100% - 6px);
+    opacity: 0.3;
+    background: #039be5;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
     left: 0;
     bottom: 0;
     z-index: -1;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;    
+}
+
+.btnFormulario:hover{
+    transform: translate(-12px, -12px);
 }
 
 .btnFormulario:hover::after{
-    transform: translate(-5px, -5px);
+    transform: translate(6px, 6px);
 }
 
 .btnFormulario:hover::before{
-    transform: translate(5px, 5px);
+    transform: translate(12px, 12px);
 }
+

@@ -1,21 +1,33 @@
-# Project Title
+# Tienda La Optica
 
-Curso de React Js
-Segunda pre-entrega del proyecto final
+Proyecto de e-commerce para el Curso de React Js - comisión 47230 de la plataforma de aprendizaje online CoderHouse.
+La aplicación permite ver una lista de productos y realizar compras on-line. Los productos y las órdenes de compra se almacenan en Firebase.
 
 ## Authors
 
 - Marcelo Luna
 
-## Documentation
+## Tecnologías utilizadas
 
-El presente contiene ejercitación para la segunda pre-entrega del proyecto final.
+- Vite
+- React
+- React Router
+- Firebase
 
-Como ser los siguientes:
-* Creación del catálogo, uso de Promesas y método Map, Filter y Find.
-* Detalle del producto - creación del componente ItemDetailContainer.
-* Implementando navegabilidad usando BrowserRouter.
+## Funcionalidades
 
-## Used By
+- Ver una lista de productos.
+- Agregar productos al carrito de compras.
+- Ver los productos que tenemos en el carrito de compras.
+- Realizar el checkout de la compra.
 
-Este proyecto puede ser usado por los alumnos de la comisión 47230 o quién pueda aprovecharlo, para tener guías básicas de cómo abordar los conceptos que en este se intentan transmitir.
+## Instalación
+
+1. Clonar el repositorio en tu pc local.
+2. Abrir terminal en el directorio de proyecto.
+3. Ejecutar comando npm install
+4. Ejecutar comando npm run dev para iniciar aplicación en el navegador predeterminado de tu pc local.
+
+## Licencia
+
+Este proyecto puede ser usado por quién pueda aprovecharlo, para tener guías básicas de cómo abordar los conceptos que en este se intentan transmitir.
