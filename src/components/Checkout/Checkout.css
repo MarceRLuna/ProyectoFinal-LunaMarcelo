@@ -1,0 +1,54 @@
+
+.checkout {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.checkout h2 {
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.grupoFormulario {
+    margin-top: 20px;
+}
+
+.grupoFormulario label {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.grupoFormulario input {
+    margin-left: 10px;
+}
+
+.btnFormulario{
+    color: #039be5;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-size: 15px;
+    position: relative;
+    margin: 32px;
+}
+
+.btnFormulario::after, .btnFormulario::before{
+    border: 3px solid #039be5;
+    content: "";
+    position: absolute;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.btnFormulario:hover::after{
+    transform: translate(-5px, -5px);
+}
+
+.btnFormulario:hover::before{
+    transform: translate(5px, 5px);
+}
