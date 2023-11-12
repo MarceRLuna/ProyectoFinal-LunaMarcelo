@@ -23,27 +23,19 @@ export const Checkout = () => {
 
         event.preventDefault(); //evitamos que el formulario recargue la página
 
-        //Validación de productos en el carrito
+        //Validación de que haya productos en el carrito, que los campos del formulario estén completos y que los mails estén correctamente escritos
 
         if (!total) {
             setError("Se produjo un error al crear la orden")
             return;
-        }
-
-        //Verificamos que los campos estén completos
-
-        if (!nombre || !apellido || !telefono || !email || !emailConfir ) {
-            setError("Por complente todos los campos solicitados");
-            return; //colocamos el retorno por que si se cumple la condición de que el usuario deja algún campo del formulario vacío, entonces el código debajo no se ejecuta.
-        }
-
-        //Validación de Email
-
-        if (email !== emailConfir) {
+        }else if (!nombre || !apellido || !telefono || !email || !emailConfir) {
+            setError("Complete todos los campos solicitados");
+            return;            
+        } else if (email !== emailConfir) {
             setError("Los campos del email no coinciden");
             return;
         }
-
+        
         //ORDEN DE COMPRA
 
         //Creamos un objeto con todos los datos de la orden de compra
@@ -52,7 +44,7 @@ export const Checkout = () => {
             items: cart.map(producto => ({
                 id: producto.item.id,
                 nombre: producto.item.nombre,
-                cantidad: producto.cantidad
+                cantidad: producto.cantidad,                
             })),
             total: total,
             fecha: new Date(),
@@ -72,6 +64,15 @@ export const Checkout = () => {
             .catch(error => {
                 console.log("Error al crear la orden", error);                
             })
+        
+        //limpiamos los campos
+
+        setError("");
+        setNombre("");
+        setApellido("");
+        setTelefono("");
+        setEmail("");
+        setEmailConfir("");    
     }    
 
     return (
@@ -82,7 +83,7 @@ export const Checkout = () => {
                         cart.map(producto => (
                             <div key={producto.item.id}>
                                 <p>Nombre Producto: {producto.item.nombre} x {producto.cantidad}</p>
-                                <p>Precio: $ {producto.item.precio}</p>
+                                <p>Precio: $ {producto.item.precio}</p>                                
                                 <hr />
                             </div>
                         ))
@@ -121,20 +122,16 @@ export const Checkout = () => {
                     }
                 </div>
 
-                <button type="submit" onClick={()=>{
-                    setError("")
-                    setNombre("")
-                    setApellido("")
-                    setEmail("")
-                    setEmailConfir("")
-                }} className="btnFormulario"> Finalizar Compra </button>
+                <button type="submit" className="btnFormulario"> Finalizar Compra </button>
             </form>
             
-            {
-                ordenId && (
-                    <strong> !Gracias por tu compra! Tu número de orden es {ordenId} </strong>
-                )
-            }            
+            <div className="compraRealizada">
+                {
+                    ordenId && (
+                        <strong> !Gracias por tu compra! Tu número de orden es {ordenId} </strong>
+                    )                
+                }
+            </div>            
         </div>
     )
 }

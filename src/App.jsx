@@ -23,7 +23,7 @@ function App() {
             <Route path="/checkout" element={<Checkout/>}/>
             <Route path="*" element={<h2 className="mensajito"> Sitio en contrucción </h2>} />
           </Routes>
-          {/* <Footer/>           */}
+          {/* <Footer/> */}
         </CartProvider>
       </BrowserRouter>
     </div> 

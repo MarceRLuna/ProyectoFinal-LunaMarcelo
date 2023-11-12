@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .checkout {
     width: 70%;
@@ -12,6 +13,7 @@
 
 .grupoFormulario {
     margin-top: 20px;
+    font-family: 'Nunito', sans-serif;;
 }
 
 .grupoFormulario label {
@@ -28,12 +30,15 @@
     margin-top: 35px;
     font-size: 20px;
     font-weight: 600;
+    font-family: 'Nunito', sans-serif;;
 }
 
 .btnFormulario{
     text-decoration: none;
     padding: 10px 25px;
     font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     position: relative;
     margin-top: 10px;
     background: #039be5;
@@ -66,5 +71,11 @@
 
 .btnFormulario:hover::before{
     transform: translate(12px, 12px);
+}
+
+.compraRealizada {
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;;
 }
 
