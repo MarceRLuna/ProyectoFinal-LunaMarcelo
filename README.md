@@ -3,7 +3,7 @@
 Proyecto de e-commerce para el Curso de React Js - comisión 47230 de la plataforma de aprendizaje online CoderHouse.
 La aplicación permite ver una lista de productos y realizar compras on-line. Los productos y las órdenes de compra se almacenan en Firebase.
 
-## Authors
+## Autor
 
 - Marcelo Luna
 
