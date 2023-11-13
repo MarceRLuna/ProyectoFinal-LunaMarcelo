@@ -26,7 +26,7 @@ function App() {
           <Footer/>
         </CartProvider>
       </BrowserRouter>
-    </div> 
+      </div> 
   );
 }
 
