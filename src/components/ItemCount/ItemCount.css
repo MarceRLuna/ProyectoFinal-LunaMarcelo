@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.btn {
+display: flex;
+gap: 25px;
+}
+
+.btnContador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid #039be5;
+    border-radius: 15px;
+    background-color: rgb(214, 210, 210);
+    width: 100%px;
+}
+
+.btnRestar, .btnSumar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 60px;
+    height: 35px;
+    border: 1px solid rgb(214, 210, 210);
+    border-radius: 15px;
+    background-color: rgb(214, 210, 210);
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.contador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-weight: 600;    
+    background-color: rgb(214, 210, 210);
+}
+
+.btnAgregar {
+    text-decoration: none;
+    width: 250px;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    background: #039be5;
+    color: #ffffff;
+    border-radius: 15px;
+}

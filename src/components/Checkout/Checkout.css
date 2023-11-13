@@ -4,6 +4,7 @@
     width: 70%;
     margin: 0 auto;
     padding: 20px 0;
+    min-height: 80vh;
 }
 
 .checkout h2 {

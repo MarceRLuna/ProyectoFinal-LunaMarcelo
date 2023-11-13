@@ -2,14 +2,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 
-.itemDetalle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    padding: 2rem;
+.itemDetail {
+    height: 80vh;
+    display: grid;
     font-family: 'Nunito', sans-serif;
+    grid-template-columns: 5fr 5fr;     
+    grid-template-areas: 
+    "img h3"
+    "img p"
+    "img id"
+    "img precio"
+    "img itemCount";
     
   }
+
+   .img {
+    grid-area: img;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .h3 {
+    grid-area: h3;
+    align-self: center;
+    justify-self: center;    
+  }
+
+  .p {
+    grid-area: p;    
+    padding: .5rem;
+    align-self: center;
+    justify-self: center;    
+  }
+
+  .id{
+    grid-area: id;
+    align-self: center;
+  }
+
+  .precio {
+    grid-area: precio;
+    align-self: center;        
+  }
+
+  .precio span {
+    font-weight: 600;    
+  }
+
+  .itemCount {
+    align-self: center;
+    justify-self: center;
+    
+  }
+
+  .btnTerminarCompra {
+    text-decoration: none;
+    width: 150px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    background: #039be5;
+    color: #ffffff;
+    border-radius: 15px;
+  }
+
   
+   

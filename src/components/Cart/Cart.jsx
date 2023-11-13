@@ -19,8 +19,8 @@ export const Cart = () =>{
             </div>
         )        
     }
-    return(      
 
+    return(   
         <div className="cartProductos">
             {cart.map (producto => <CarttItem key={producto.id} {...producto}/>)}
             <div className="carrito">
@@ -28,10 +28,9 @@ export const Cart = () =>{
                 <h4>Cantidad Total: {cantidadTotal}</h4>
                 <button onClick={()=>vaciarCart()}>Vaciar Carrito</button>
                 <Link to="/checkout"> 
-                    <button>Finalizar Compra</button>
+                    <button className="btnFinalizar">Finalizar Compra</button>
                 </Link>
             </div>
         </div>
-
     )
 }

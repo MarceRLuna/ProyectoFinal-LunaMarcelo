@@ -29,16 +29,20 @@ export const ItemDetail = ({ id, nombre, precio, img, descripcion, stock }) => {
   }
 
   return (
-    <div className="itemDetalle">
-      <h3>{nombre}</h3>
-      <p>Precio: $ {precio}</p>
-      <h4>ID: {id}</h4>
-      <p>Descripción: {descripcion}</p>
-      <img src={img} alt={nombre} />
-      {
-        //Empleamos la lógica de montaje y desmontaje de componentes.
-        agregarItem > 0 ? (<Link to="/cart"> Terminar compra </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handlerCantidad}/>)
-      }
+    <div className="itemDetail">      
+      <h3 className="h3">{nombre}</h3>
+      <p className="precio">Precio: <span>$ {precio}</span></p>
+      <h4 className="id">ID: {id}</h4>
+      <p className="p">Descripción: {descripcion}</p>
+      <img src={img} alt={nombre} className="img" />
+      <div className="itemCount">
+        {
+          //Empleamos la lógica de montaje y desmontaje de componentes.
+          agregarItem > 0 ? (<Link to="/cart"> <button className="btnTerminarCompra"> Terminar compra </button> </Link>) : (<ItemCount inicial={1} stock={stock} funcionAgregar={handlerCantidad}/>)
+        }
+      </div>
+      
+      
     </div>
   );
 };

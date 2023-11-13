@@ -1,7 +1,7 @@
 
+import "./ItemCount.css"
 import { useState } from "react";
 
-// eslint-disable-next-line react/prop-types
 export const ItemCount = ({inicial, stock, funcionAgregar}) => {
 
     const [contador, setContador] = useState(inicial);
@@ -20,14 +20,13 @@ export const ItemCount = ({inicial, stock, funcionAgregar}) => {
     }
 
     return (
-        <>
-            <div>
-                <button onClick={decrementar}> - </button>
-                <p> {contador} </p>
-                <button onClick={incrementar}> + </button>
-            </div>
-            
-            <button onClick={() => funcionAgregar(contador)}> Agregar al Carrito </button>
-        </>
+        <div className="btn">
+            <div className="btnContador">
+                <button onClick={decrementar} className="btnRestar"> - </button>
+                <p className="contador"> {contador} </p>
+                <button onClick={incrementar} className="btnSumar"> + </button>
+            </div>            
+            <button onClick={() => funcionAgregar(contador)} className="btnAgregar"> Agregar al Carrito </button>
+        </div>
     )
 }
